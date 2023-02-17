@@ -14,6 +14,7 @@
 	</head>
 	<body>
 		<jsp:include page="../common/menuBar.jsp" />
+		<br><br>
 		<div id="content">
 			<img alt="마이바티스 메인이미지" src="/resources/images/mybatis.png">
 		</div>

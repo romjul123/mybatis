@@ -24,7 +24,7 @@
 				--table-collapse : collapes;
 			}
 			.login-area {
-				height : 80px;
+				height : 100px;
 			}
 		</style>
 	</head>
@@ -43,6 +43,11 @@
 					<tr>
 						<td>비밀번호 : </td>
 						<td><input type="password" name="member-pw"></td>
+					</tr>
+					<tr>
+						<td colspan="2">
+						<a href="/member/register.do">회원가입</a>
+						</td>
 					</tr>
 				</table>
 			</form>
@@ -63,11 +68,16 @@
 			</c:if>
 		</div>
 		<div>
-			<div class="menu" onlick="">Home</div>
-			<div class="menu" onlick="">멤버목록</div>
-			<div class="menu" onlick="">강좌목록</div>
-			<div class="menu" onlick="">게시판</div>
-			<div class="menu" onlick="">ETC</div>
+			<div class="menu" onclick="javascript:location.href='/index.jsp'">Home</div>
+			<div class="menu" onclick="moveMemberList();">멤버목록</div>
+			<div class="menu" onclick="">강좌목록</div>
+			<div class="menu" onclick="">게시판</div>
+			<div class="menu" onclick="">ETC</div>
 		</div>
+		<script>
+			function moveMemberList() {
+				location.href = "/member/list.do";
+			}
+		</script>
 	</body>
 </html>

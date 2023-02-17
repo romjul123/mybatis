@@ -31,6 +31,20 @@ public class Member {
 		this.memberGender = memberGender;
 		this.memberHobby = memberHobby;
 	}
+	
+	
+
+	public Member(String memberId, String memberPw, String memberEmail, String memberPhone, String memberAddr, String memberHobby) {
+		super();
+		this.memberId = memberId;
+		this.memberPw = memberPw;
+		this.memberEmail = memberEmail;
+		this.memberPhone = memberPhone;
+		this.memberAddr = memberAddr;
+		this.memberHobby = memberHobby;
+	}
+
+
 
 	// 생성자
 	public Member() {}
